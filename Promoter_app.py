@@ -4,7 +4,7 @@ import requests
 
 st.set_page_config(layout="wide")
 
-df = pd.read_csv('https://raw.githubusercontent.com/Shuaib21803/Prom/main/stocks.csv')
+df = pd.read_csv('https://raw.githubusercontent.com/Shuaib21803/Promoter-Screener/main/stocks.csv')
 #meta = requests.get('https://api.github.com/repos/Shuaib21803/Promoter-Screener/commits?path=stocks.csv').json()[0]['commit']['committer']['date']
 #meta = ' '.join(meta.split('T'))[0:-1]
 df['Pledged'] = df['Pledged'].str.lstrip()
